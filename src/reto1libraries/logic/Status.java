@@ -5,35 +5,31 @@
  */
 package reto1libraries.logic;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Andoni Alday
  */
-public class ConnectionClientServer {
+public enum Status implements Serializable{
 
     /**
-     *
+     * Enumeration option 0
      */
-    public final String SERVER = "192.168.20.51";
+    PENDING,
 
     /**
-     *
+     * Enumeration option 1
      */
-    public final int PORT = 5000;
-
+    CORRECT,
+    
     /**
-     *
-     * @return
+     * Enumeration option 2
      */
-    public String getSERVER() {
-        return SERVER;
-    }
-
+    FAIL,
+    
     /**
-     *
-     * @return
+     * Enumeration option 3
      */
-    public int getPORT() {
-        return PORT;
-    }
+    ERROR;
 }

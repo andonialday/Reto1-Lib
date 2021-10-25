@@ -1,5 +1,8 @@
 package reto1libraries.exception;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Custom controller for Client-Server communication exceptions
  * @author Andoni Alday
@@ -16,7 +19,8 @@ public class ClientServerConnectionException extends Exception{
      * @param message to be shown to the user
      */
     public ClientServerConnectionException(String message) {
-		super(message);
+        Logger logger = Logger.getAnonymousLogger();
+        logger.log(Level.SEVERE, message, this);
 	}
 	
 }
