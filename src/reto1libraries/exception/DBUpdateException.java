@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 /**
  * Custom controller for Update type SQL Exceptions
- * @author Enaitz Izagirre
+ * @author Aitor Perez
  */
 public class DBUpdateException extends Exception{
 
@@ -16,7 +16,8 @@ public class DBUpdateException extends Exception{
 
     /**
      * Generation of the customized Exception
-     * @param message
+     * @param message Excepcion personalizada para cuando no se pueda actualizar
+     * la base de datos.
      */
     public DBUpdateException(String message) {
 	Logger logger = Logger.getAnonymousLogger();
