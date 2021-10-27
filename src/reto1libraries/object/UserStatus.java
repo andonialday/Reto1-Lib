@@ -8,18 +8,18 @@ package reto1libraries.object;
 import java.io.Serializable;
 
 /**
- *
+ * UserStatus enumeration for the user, with the possbile values ofthe field
  * @author Andoni Alday
  */
 public enum UserStatus implements Serializable{
 
     /**
-     * Enumeration option 0
+     * Enumeration option 0, the user is Enabled
      */
     ENABLED,
 
     /**
-     * Enumeration option 1
+     * Enumeration option 1, the useris Dissabled
      */
     DISABLED;
 }

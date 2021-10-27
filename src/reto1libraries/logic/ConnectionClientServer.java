@@ -12,12 +12,12 @@ package reto1libraries.logic;
 public class ConnectionClientServer {
 
     /**
-     *
+     * IP of the Server Application
      */
     public final String SERVER = "192.168.20.51";
 
     /**
-     *
+     * Port of communication
      */
     public final int PORT = 5000;
 

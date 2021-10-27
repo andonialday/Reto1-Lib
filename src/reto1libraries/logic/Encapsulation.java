@@ -38,32 +38,32 @@ public class Encapsulation implements Serializable {
     }
 
     /**
-     * 
-     * @return
+     * Getter of the Method identification
+     * @return the identification of the method
      */
     public Method getMethod() {
         return method;
     }
 
     /**
-     * 
-     * @param method
+     * Setter ofthe Method identification
+     * @param method the identification of the Method
      */
     public void setMethod(Method method) {
         this.method = method;
     }
 
     /**
-     * 
-     * @return
+     * Getter of the proces Status information
+     * @return the process Status information
      */
     public Status getStatus() {
         return status;
     }
 
     /**
-     * 
-     * @param status
+     * Setter ofthe process Status information
+     * @param status the information of the process Status
      */
     public void setStatus(Status status) {
         this.status = status;

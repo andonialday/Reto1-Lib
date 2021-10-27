@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 /**
  * Custom controller for Client-Server communication exceptions
- * @author Andoni Alday
+ * @author Aitor Perez
  */
 public class ClientServerConnectionException extends Exception{
 

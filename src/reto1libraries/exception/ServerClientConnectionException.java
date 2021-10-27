@@ -4,9 +4,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Custom controller for Client-Server communication exceptions
+ * Custom controller for Server-Client communication exceptions
  *
- * @author Andoni Alday
+ * @author Jaime San Sebastian
  */
 public class ServerClientConnectionException extends Exception {
 
