@@ -1,5 +1,8 @@
 package reto1libraries.exception;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Custom controller for Create type SQL Exceptions
  * @author Enaitz Izagirre
@@ -16,7 +19,8 @@ public class DBCreateException extends Exception{
      * @param message
      */
     public DBCreateException(String message) {
-		super(message);
+        Logger logger = Logger.getAnonymousLogger();
+        logger.log(Level.SEVERE, message, this);
 	}
 
 	

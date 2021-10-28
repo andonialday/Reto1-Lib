@@ -8,18 +8,18 @@ package reto1libraries.object;
 import java.io.Serializable;
 
 /**
- *
+ * Privilege enumeration for the user, with the possbile values ofthe field
  * @author Andoni Alday
  */
 public enum Privilege implements Serializable{
 
     /**
-     * Enumeration option 0
+     * Enumeration option 0, the user has Admin privileges
      */
     ADMIN,
 
     /**
-     * Enumeration option 1
+     * Enumeration option 1, the user has User privileges
      */
     USER;
 }
