@@ -17,7 +17,11 @@ public class DBCreateException extends Exception{
      * @param message show message to the user
      */
     public DBCreateException(String message) {
+ DBReadException,DBCreateException,
 	Logger logger = Logger.getAnonymousLogger();
+
+        Logger logger = Logger.getAnonymousLogger();
+ master
         logger.log(Level.SEVERE, message, this);
 	}
 
