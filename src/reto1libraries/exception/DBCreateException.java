@@ -9,17 +9,19 @@ import java.util.logging.Logger;
  */
 public class DBCreateException extends Exception{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	
+    private static final long serialVersionUID = 1L;
 
     /**
      * Generation of the customized Exception
-     * @param message
+     * @param message show message to the user
      */
     public DBCreateException(String message) {
+ DBReadException,DBCreateException,
+	Logger logger = Logger.getAnonymousLogger();
+
         Logger logger = Logger.getAnonymousLogger();
+ master
         logger.log(Level.SEVERE, message, this);
 	}
 
