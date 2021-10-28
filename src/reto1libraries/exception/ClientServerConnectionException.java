@@ -19,7 +19,7 @@ public class ClientServerConnectionException extends Exception{
      * @param message to be shown to the user
      */
     public ClientServerConnectionException(String message) {
-	Logger logger = Logger.getAnonymousLogger();
+	      Logger logger = Logger.getAnonymousLogger();
         logger.log(Level.SEVERE, message, this);
 	}
 	

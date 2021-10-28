@@ -18,6 +18,7 @@ public interface Signable {
      *
      * @param usr
      * @return
+     * @throws reto1libraries.exception.ClientServerConnectionException
      * @throws reto1libraries.exception.DBConnectionException
      * @throws reto1libraries.exception.DBReadException
      * @throws reto1libraries.exception.DBUpdateException
@@ -28,6 +29,7 @@ public interface Signable {
      *
      * @param usr
      * @return
+     * @throws reto1libraries.exception.ClientServerConnectionException
      * @throws reto1libraries.exception.DBConnectionException
      * @throws reto1libraries.exception.DBReadException
      * @throws reto1libraries.exception.DBCreateException
