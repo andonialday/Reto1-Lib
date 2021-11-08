@@ -20,10 +20,9 @@ public interface Signable {
      * @return
      * @throws reto1libraries.exception.ClientServerConnectionException
      * @throws reto1libraries.exception.DBConnectionException
-     * @throws reto1libraries.exception.DBReadException
-     * @throws reto1libraries.exception.DBUpdateException
+     * @throws reto1libraries.exception.CredentialErrorException
      */
-    public User signIn(User usr) throws ClientServerConnectionException, DBConnectionException, DBReadException, DBUpdateException;
+    public User signIn(User usr) throws ClientServerConnectionException, DBConnectionException, CredentialErrorException;
     
     /**
      *
@@ -31,9 +30,8 @@ public interface Signable {
      * @return
      * @throws reto1libraries.exception.ClientServerConnectionException
      * @throws reto1libraries.exception.DBConnectionException
-     * @throws reto1libraries.exception.DBReadException
-     * @throws reto1libraries.exception.DBCreateException
+     * @throws reto1libraries.exception.LoginOnUseException
      */
-    public User signUp(User usr) throws ClientServerConnectionException, DBConnectionException, DBReadException, DBCreateException;
+    public User signUp(User usr) throws ClientServerConnectionException, DBConnectionException, LoginOnUseException;
     
 }
