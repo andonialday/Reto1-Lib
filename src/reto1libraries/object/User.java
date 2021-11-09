@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ * Class with the Paremeters for User Creation
  * @author Andoni Alday
  */
 public class User implements Serializable {

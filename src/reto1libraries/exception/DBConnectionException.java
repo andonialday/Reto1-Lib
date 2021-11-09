@@ -10,9 +10,6 @@ import java.util.logging.Logger;
  */
 public class DBConnectionException extends Exception {
 
-    /**
-     *
-     */
     private static final long serialVersionUID = 1L;
 
     /**

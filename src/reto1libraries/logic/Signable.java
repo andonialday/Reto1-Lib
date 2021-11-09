@@ -9,28 +9,28 @@ import reto1libraries.exception.*;
 import reto1libraries.object.User;
 
 /**
- *
- * @author Jaime San Sebastian
+ * Signable Interface 
+ * @author Jaime San Sebastian,Enaitz Izagirre
  */
 public interface Signable {
  
     /**
-     *
-     * @param usr
-     * @return
-     * @throws reto1libraries.exception.ClientServerConnectionException
-     * @throws reto1libraries.exception.DBConnectionException
-     * @throws reto1libraries.exception.CredentialErrorException
+     * Sign In Method Interface
+     * @param usr Takes a user from the client side
+     * @return Returns a user with all the data
+     * @throws reto1libraries.exception.ClientServerConnectionException If the Client cant Connect With
+     * @throws reto1libraries.exception.DBConnectionException Error processing feedback from the Database
+     * @throws reto1libraries.exception.CredentialErrorException If the user is not correct
      */
     public User signIn(User usr) throws ClientServerConnectionException, DBConnectionException, CredentialErrorException;
     
     /**
-     *
-     * @param usr
-     * @return
-     * @throws reto1libraries.exception.ClientServerConnectionException
-     * @throws reto1libraries.exception.DBConnectionException
-     * @throws reto1libraries.exception.LoginOnUseException
+     * Sign Up Method Interface
+     * @param usr Takes a user from the client side
+     * @return Returns a user with all the data
+     * @throws reto1libraries.exception.ClientServerConnectionException If the Client cant Connect With
+     * @throws reto1libraries.exception.DBConnectionException Error processing feedback from the Database
+     * @throws reto1libraries.exception.LoginOnUseException If the User Parameters are rown
      */
     public User signUp(User usr) throws ClientServerConnectionException, DBConnectionException, LoginOnUseException;
     
